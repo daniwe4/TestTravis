@@ -6,3 +6,10 @@ install:
     composer update --dev
 script:
   - ./run_tests.sh
+notifications:
+  email:
+    recipients:
+      - daniel4w@gmx.de
+      - daniel.weise@concepts-and-training.de
+    on_success: always
+    on_failure: always
