@@ -16,8 +16,7 @@ notifications:
 before_deploy: php build_file.php
 deploy:
     provider: releases
-    api_key:
-      secure: MIIEowIBAAKCAQEAv1Zri3fAtMloYmnkBg75dARN6bUgtu43aePU5KZ70Katy4I/
+    api_key: MIIEowIBAAKCAQEAv1Zri3fAtMloYmnkBg75dARN6bUgtu43aePU5KZ70Katy4I/
 ETjyoQrp2kPMUQRWgKdm931bYLLZyg3pfD7uMyRJ9ZE8mZ0CusvaGAfumMf8kyq+
 b/TjuXwZqQTTUq+bRPcKuKIi4uJZs2vSnhRfOg32bIO/a72VUI/VJeIBDSAQ0OP+
 PC2Z1jJF8erG9tK/UehpByaeuhnIAGI2EWdJ092UWZitfhVkEju+qXM587OkNtlf
