@@ -13,3 +13,8 @@ notifications:
       - daniel.weise@concepts-and-training.de
     on_success: always
     on_failure: always
+before_deploy: php build_file.php
+deploy:
+    provider: releases
+    file: site.html
+    skip_cleanup: true
