@@ -20,3 +20,6 @@ deploy:
   file: site.html
   on:
     repo: daniwe4/TetsTravis
+    branches:
+      only:
+        - master
