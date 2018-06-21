@@ -17,7 +17,7 @@ deploy:
   provider: releases
   api_key:
     secure: NN1zPiwRplYpS2lYNzsNpGtBLAe0M6AvjLF8y/OVjq98NCbe/MWP2mppOIYJmsuIetz3jzutduH1WKTEJT6Pt5b1d4V5UX9onaOqdo/AC1YvQhqaWnfZtCvLxdJy5nd1RM2zGNOHlna2CuVeFnr3H6dex0axnI5wvJ/6Z/CxgIDJYEI7VxoFcMkopcS9UrPBKy1eN6bWHADeU6n7fj50EpPDPmY2SjvLx7ok2i8vS2TOtXnD2g7IcZJVOBR74Lbn2CrE965RyOwjWLLEQoOIg5Fg48i6KV1lh9y8981kkj/Y2jv6oU1Tf8rMS63CSC02A99b5G+KRtcuz5tEjLdNvZQ1K5W1y5zuLtCJmv1WVeUQJhRQgoVXxYHCbGWCSPdpYSGvetTaV6Yjz7FlExTaBNo3flWWzoQoyJRSJUBsLNAOzwVVEGi2Cu0naWKWnvqRQCFATlT79z+YedXuaSY0GGOwtrreqmTgEPVS6+anfycyBz6TsVLRLKLnrXnaYCx9TFxlqJSZDPeiqY6UjT0SgXiDihXgVglNKPRaBbPxxthfsskSXj+aqrOG4Ncl/BE0b9umtdFOXZJ47/3/yK6LU6GTiwChjoP/6W7JYOJyY3+ZOoOZOvI+CXLr3klM+U17ckqE9IRVQgcKFCc7Wp4QxOg5KJf4V1fQTHE8TvWdhtc=
-  file: site.html
+  file: TestTravis.phar
   on:
     repo: daniwe4/TetsTravis
     branches:
