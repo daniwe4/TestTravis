@@ -16,9 +16,21 @@ if (file_exists($phar_path)) {
     unlink($phar_path);
 }
 
-require_once($base_dir."/TestTravis.php");
+$phar = new Phar
+    ( $phar_path
+    , FilesystemIterator::CURRENT_AS_FILEINFO | FilesystemIterator::KEY_AS_FILENAME
+    , $phar_name
+    );
 
-$site = run();
-$file = file_put_contents($phar_name, $site);
+$phar->buildFromDirectory($base_dir);
+
+$phar->setStub(<<<STUB
+#!/usr/bin/env php
+<?php
+Phar::mapPhar();
+include "phar://$phar_name/TestTravis.php";
+__HALT_COMPILER();
+STUB
+);
 
 chmod($phar_path, 0755);

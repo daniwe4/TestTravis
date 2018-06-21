@@ -12,3 +12,5 @@ function run()
 
 	return $site;
 }
+
+run();
