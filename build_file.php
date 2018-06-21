@@ -8,7 +8,7 @@ $vendor_dir = "$base_dir/vendor";
 $dicto_path = "$base_dir/dicto.php";
 
 $build_dir = __DIR__;
-$phar_name = "site.html";
+$phar_name = "TestTravis.php";
 $phar_path = "$build_dir/$phar_name";
 
 // Remove previously created phar if one exists.
