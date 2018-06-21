@@ -1,6 +1,7 @@
 <?php
+namespace CaT\TravisTest;
 
-class Out
+class Html
 {
 	public function getHeader($title)
 	{

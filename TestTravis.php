@@ -1,10 +1,11 @@
 <?php
+require_once(__DIR__."/vendor/autoload.php");
 
-require_once("./Out.php");
+use CaT\TravisTest\Html;
 
-$out = new Out();
+$html = new Html();
 
-$site = $out->getHeader("TravisTest");
-$site .= $out->getBody("Hier soll eine Ausgabe stehen.");
+$site = $html->getHeader("TravisTest");
+$site .= $html->getBody("Hier soll eine Ausgabe stehen.");
 
 return $site;
