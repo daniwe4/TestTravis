@@ -1,0 +1,13 @@
+{
+    "name": "cat/travis_test",
+    "authors": [
+        {
+            "name": "daniel4w",
+            "email": "daniel4w@gmx.de"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit" : "^5.7"
+    }
+}
