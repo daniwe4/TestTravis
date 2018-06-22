@@ -26,7 +26,7 @@ $phar->buildFromDirectory($base_dir);
 $phar->setStub(<<<STUB
 #!/usr/bin/env php
 <?php
-Phar::mapPhar($phar_name);
+Phar::mapPhar();
 include "$phar_name/TestTravis.php";
 __HALT_COMPILER();
 STUB
