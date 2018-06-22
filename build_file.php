@@ -5,7 +5,6 @@ $base_dir = __DIR__;
 
 $src_dir = "$base_dir/src";
 $vendor_dir = "$base_dir/vendor";
-$dicto_path = "$base_dir/dicto.php";
 
 $build_dir = __DIR__;
 $phar_name = "TestTravis.phar";
@@ -28,7 +27,7 @@ $phar->setStub(<<<STUB
 #!/usr/bin/env php
 <?php
 Phar::mapPhar();
-include "phar://$phar_name/TestTravis.php";
+include "$phar_name/TestTravis.php";
 __HALT_COMPILER();
 STUB
 );
