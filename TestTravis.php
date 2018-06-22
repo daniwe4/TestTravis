@@ -13,7 +13,7 @@ function run()
 	return $site;
 }
 $start_time = microtime(true);
-run();
+echo run();
 
 $time_elapsed_secs = microtime(true) - $start_time;
 echo "execution time:    ".$time_elapsed_secs."s\n";

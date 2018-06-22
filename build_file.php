@@ -27,7 +27,7 @@ $phar->setStub(<<<STUB
 #!/usr/bin/env php
 <?php
 Phar::mapPhar();
-include "$phar_name/TestTravis.php";
+include "phar://$phar_name/TestTravis.php";
 __HALT_COMPILER();
 STUB
 );
